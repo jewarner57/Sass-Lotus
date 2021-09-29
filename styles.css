@@ -20,28 +20,22 @@
   animation-fill-mode: forwards;
 }
 
+.lotus > div:nth-child(0) {
+  animation-name: petal-0;
+  background-color: rgba(255, 0, 255, 0.2);
+}
+
+@keyframes petal-0 {
+  0% {
+    transform: rotate(45deg);
+  }
+  100% {
+    transform: rotate(-90deg);
+  }
+}
 .lotus > div:nth-child(1) {
   animation-name: petal-1;
   background-color: rgba(255, 0, 0, 0.2);
-}
-
-.lotus > div:nth-child(2) {
-  animation-name: petal-2;
-  background-color: rgba(255, 255, 0, 0.2);
-}
-
-.lotus > div:nth-child(3) {
-  background-color: rgba(0, 255, 0, 0.2);
-}
-
-.lotus > div:nth-child(4) {
-  animation-name: petal-4;
-  background-color: rgba(0, 255, 255, 0.2);
-}
-
-.lotus > div:nth-child(5) {
-  animation-name: petal-5;
-  background-color: rgba(0, 0, 255, 0.2);
 }
 
 @keyframes petal-1 {
@@ -52,6 +46,11 @@
     transform: rotate(-45deg);
   }
 }
+.lotus > div:nth-child(2) {
+  animation-name: petal-2;
+  background-color: rgba(255, 255, 0, 0.2);
+}
+
 @keyframes petal-2 {
   0% {
     transform: rotate(45deg);
@@ -60,6 +59,24 @@
     transform: rotate(0deg);
   }
 }
+.lotus > div:nth-child(3) {
+  animation-name: petal-3;
+  background-color: rgba(0, 255, 0, 0.2);
+}
+
+@keyframes petal-3 {
+  0% {
+    transform: rotate(45deg);
+  }
+  100% {
+    transform: rotate(45deg);
+  }
+}
+.lotus > div:nth-child(4) {
+  animation-name: petal-4;
+  background-color: rgba(0, 255, 255, 0.2);
+}
+
 @keyframes petal-4 {
   0% {
     transform: rotate(45deg);
@@ -68,6 +85,11 @@
     transform: rotate(90deg);
   }
 }
+.lotus > div:nth-child(5) {
+  animation-name: petal-5;
+  background-color: rgba(0, 0, 255, 0.2);
+}
+
 @keyframes petal-5 {
   0% {
     transform: rotate(45deg);
